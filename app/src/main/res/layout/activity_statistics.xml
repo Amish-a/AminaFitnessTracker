@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/splash_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статистика за період"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTimePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/progressChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonShowProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показати графік"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp" />
+</LinearLayout>

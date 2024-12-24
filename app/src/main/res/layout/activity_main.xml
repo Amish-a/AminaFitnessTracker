@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background">
+
+    <!-- Тулбар -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:titleTextColor="@android:color/black"
+        android:elevation="4dp"
+        android:title="Fitness Tracker"
+        android:layout_alignParentTop="true">
+
+        <!-- Кнопка меню (бургер) -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/menu_button"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Логотип -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <!-- Список тренувань -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/logoImage"
+        android:layout_above="@id/buttonContainer"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp" />
+
+    <!-- Контейнер для кнопок -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="16dp">
+
+        <!-- Кнопка "Переглянути статистику" -->
+        <Button
+            android:id="@+id/buttonViewStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Переглянути статистику"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="15dp"
+            android:elevation="8dp"
+            android:textSize="9sp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_background" />
+
+        <!-- Кнопка "Додати тренування" -->
+        <Button
+            android:id="@+id/addTrainingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додати тренування"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="14dp"
+            android:elevation="4dp"
+            android:textSize="8sp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+
+</RelativeLayout>

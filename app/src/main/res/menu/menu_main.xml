@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addTraining"
+        android:title="Додати тренування" />
+    <item
+        android:id="@+id/viewStatistics"
+        android:title="Переглянути статистику" />
+</menu>

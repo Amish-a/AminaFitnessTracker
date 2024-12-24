@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AminaFitnessTracker</string>
+    <string name="menu_button">Menu</string>
+    <string-array name="categories">
+        <item>Фітнес</item>
+        <item>Кардіо</item>
+        <item>Силові тренування</item>
+        <item>Йога</item>
+        <item>Плавання</item>
+        <item>Біг</item>
+        <item>Танці</item>
+        <item>Пілатес</item>
+        <item>Кроссфіт</item>
+        <item>Боксерські тренування</item>
+    </string-array>
+</resources>

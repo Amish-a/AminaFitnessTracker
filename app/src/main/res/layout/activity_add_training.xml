@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/splash_background"> <!-- Використовуємо ресурс для фону -->
+
+    <!-- Поле для введення назви тренування -->
+    <EditText
+        android:id="@+id/editTextTrainingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Назва тренування"
+        android:inputType="text"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" /> <!-- Додаємо відступ для відокремлення -->
+
+    <!-- Поле для введення калорій -->
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть калорії"
+        android:inputType="number"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" /> <!-- Додаємо відступ для відокремлення -->
+
+    <!-- Поле для вибору категорії -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+    <!-- Кнопка для підтвердження -->
+    <Button
+        android:id="@+id/buttonAddTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Додати тренування"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff" />
+</LinearLayout>
